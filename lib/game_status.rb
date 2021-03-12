@@ -35,7 +35,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? {|index| index == "X" || index == "O"}
+  board.all? {|index| index == "X" || index == "O"}  #Are all of the board's indexes filled with either an "X" or an "O"? If yes, true; if not, false
 end
 
 def draw?(board)
