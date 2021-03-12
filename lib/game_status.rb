@@ -40,5 +40,6 @@ end
 
 def draw?(board)
   board.all? {|index| index == "X" || index == "O"}
+
 end
 
