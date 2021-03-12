@@ -39,7 +39,7 @@ def full?(board)
 end
 
 def draw?(board)
-  if !won?(board) && full?(board)
+  if !won?(board) && full?(board)  #Is the game not won but there is a full boad? If yes, true; if not, false.
     return true
   else
     return false
