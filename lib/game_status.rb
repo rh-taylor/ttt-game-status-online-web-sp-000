@@ -47,7 +47,7 @@ def draw?(board)
 end
 
 def over?(board)
-  if draw?(board) || won?(board) && full?(board) || won?(board) && !full?(board)  #Is there a draw (draw?(board) returns true) or is there is a win and a full board or is there is a win without a full board? If yes, true; if not, false.
+  if draw?(board) || won?(board) && full?(board) || won?(board) && !full?(board)  #Is there a draw (#draw?(board) returns true) or is there is a win and a full board or is there is a win without a full board? If yes, true; if not, false.
     return true
   else
     return false
@@ -56,11 +56,11 @@ end
 
 def winner(board)
   index = []
-  index = won?(board)  #
+  index = won?(board)  #Has a win been determined with #won?(board)? A win would return the three indexes that make up a winning combination. If #won?(board) returns false (no win), winner(board) will return nil.
   if index == false
     return nil
   else
-    if board[index[0]] == "X"
+    if board[index[0]] == "X"  #But if board[index[0]]  -- unsure what board[index[0]] is -- has a winning combination with "X" tokens, return "X," otherwise return "Y."
       return "X"
     else
       return "O"
