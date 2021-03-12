@@ -47,7 +47,7 @@ def draw?(board)
 end
 
 def over?(board)
-  if draw?(board) || won?(board) && full?(board) || won?(board) && !full?(board)
+  if draw?(board) || won?(board) && full?(board) || won?(board) && !full?(board)  #Is there a draw (draw?(board) returns true) or is there is a win and a full board or is there is a win without a full board? If yes, true; if not, false.
     return true
   else
     return false
